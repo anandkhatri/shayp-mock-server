@@ -1,0 +1,18 @@
+{
+  "name": "updateAccountRiskLevel",
+  "request": {
+    "expression": "/v0/accounts/(\\\\d+)/riskLevel",
+    "method": "PATCH"
+  },
+  "responses": {
+    "ok": {
+      "default": true,
+      "data": {
+        "message": "Risk level updated."
+      }
+    },
+    "internal_server_error": {
+      "status": 500
+    }
+  }
+}

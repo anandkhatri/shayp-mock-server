@@ -1,0 +1,59 @@
+{
+  "name": "updateCustomerStatus",
+  "request": {
+    "expression": "/v0/customers/(\\\\d+)/status",
+    "method": "PATCH"
+  },
+  "responses": {
+    "ok": {
+      "default": true,
+      "data": {
+        "address": {
+          "administrativeRegion": "string",
+          "countryCodeIso": "string",
+          "line1": "string",
+          "line2": "string",
+          "line3": "string",
+          "line4": "string",
+          "line5": "string",
+          "postcode": "string",
+          "townOrCity": "string"
+        },
+        "approvedDateTimeUtc": "2024-05-15T00:27:44.644Z",
+        "blockedBy": "CLIENT",
+        "clientReference": "string",
+        "closedDateTimeUtc": "2024-05-15T00:27:44.644Z",
+        "creationDateTimeUtc": "2024-05-15T00:27:44.644Z",
+        "customerDetails": {
+          "dateOfBirth": "2024-05-15",
+          "firstName": "string",
+          "gender": "string",
+          "lastName": "string",
+          "middleName": "string",
+          "preferredName": "string",
+          "title": "string"
+        },
+        "customerHayId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+        "deviceId": "string",
+        "deviceOs": "IOS",
+        "email": "string",
+        "firebaseToken": "string",
+        "identityDocumentCardNumber": "string",
+        "identityDocumentIssuingCountry": "string",
+        "identityDocumentNumber": "string",
+        "identityDocumentRegion": "string",
+        "identityDocumentType": "DRIVING_LICENSE",
+        "lastUpdatedDateTimeUtc": "2024-05-15T00:27:44.644Z",
+        "phoneNumber": {
+          "countryCodePrefix": "string",
+          "numberAfterPrefix": "string"
+        },
+        "status": "ACTIVE",
+        "tier": "FOUNDER"
+      }
+    },
+    "internal_server_error": {
+      "status": 500
+    }
+  }
+}

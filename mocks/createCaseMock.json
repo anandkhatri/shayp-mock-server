@@ -1,0 +1,25 @@
+{
+  "name": "createVerificationCase",
+  "request": {
+    "expression": "/v1/kyc/identity-verification/cases",
+    "method": "POST"
+  },
+  "responses": {
+    "ok": {
+      "default": true,
+      "data": {
+        "mobileToken": "string",
+        "scanCase": {
+          "customerId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+          "id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+          "outcome": "NOT_EXECUTED",
+          "timestamp": "2024-05-20T04:59:02.853Z"
+        },
+        "webLink": "string"
+      }
+    },
+    "internal_server_error": {
+      "status": 500
+    }
+  }
+}

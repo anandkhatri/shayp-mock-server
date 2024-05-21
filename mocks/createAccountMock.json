@@ -1,0 +1,36 @@
+{
+  "name": "createAccount",
+  "request": {
+    "expression": "/v0/customers/(\\\\d+)/account",
+    "method": "POST"
+  },
+  "responses": {
+    "ok": {
+      "default": true,
+      "data": {
+        "accountHayId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+        "accountHolderId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+        "accountHolderType": "CUSTOMER",
+        "accountNumber": "string",
+        "availableBalance": 0,
+        "blockedBy": "CLIENT",
+        "bsb": "string",
+        "closedDateTimeUtc": "2024-05-17T05:29:09.167Z",
+        "creationDateTimeUtc": "2024-05-17T05:29:09.167Z",
+        "currency": "AED",
+        "customData": {},
+        "heldBalance": 0,
+        "lockedBalance": 0,
+        "overdraftBalance": 0,
+        "overdraftLimit": 0,
+        "stacksBalance": 0,
+        "status": "PENDING_APPROVAL",
+        "technicalOverdraftBalance": 0,
+        "totalBalance": 0
+      }
+    },
+    "internal_server_error": {
+      "status": 500
+    }
+  }
+}
