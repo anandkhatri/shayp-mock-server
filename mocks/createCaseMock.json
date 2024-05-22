@@ -1,7 +1,7 @@
 {
   "name": "createVerificationCase",
   "request": {
-    "expression": "/v1/kyc/identity-verification/cases",
+    "url": "^/v1/kyc/identity-verification/cases$",
     "method": "POST"
   },
   "responses": {

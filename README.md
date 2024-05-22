@@ -8,6 +8,7 @@ This is a mock server build on *ng-apimock* framework.
 `$ node server.js`
 
 ### How to add another mock API?
-1. Create a json file inside **/mocks** directory with the `Mock` postfix
+
+1. Create a .json file inside **/mocks** directory with the `Mock` postfix
 2. Give a unique name for the mock
 3. Define request url, method and responses.

@@ -1,7 +1,7 @@
 {
   "name": "updateAccountRiskLevel",
   "request": {
-    "expression": "/v0/accounts/(\\\\d+)/riskLevel",
+    "expression": "^/v0/accounts/\\d+/riskLevel$",
     "method": "PATCH"
   },
   "responses": {

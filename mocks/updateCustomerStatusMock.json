@@ -1,7 +1,7 @@
 {
   "name": "updateCustomerStatus",
   "request": {
-    "expression": "/v0/customers/(\\\\d+)/status",
+    "expression": "^/v0/customers/\\d+/status$",
     "method": "PATCH"
   },
   "responses": {

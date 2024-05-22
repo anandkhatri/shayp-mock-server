@@ -1,7 +1,7 @@
 {
   "name": "createCustomer",
   "request": {
-    "url": "/v0/customers/create",
+    "url": "^/v0/customers/create$",
     "method": "POST"
   },
   "responses": {
@@ -53,7 +53,22 @@
       }
     },
     "internal_server_error": {
-      "status": 500
+      "status": 500,
+      "data": {
+        "details": "Internal Server Error",
+        "message": "Internal Server Error",
+        "status": "500",
+        "traceId": "df885c42-ba2b-4337-b4ba-a450c905234d"
+      }
+    },
+    "bad_request_error": {
+      "status": 400,
+      "data": {
+        "details": "BadRequest",
+        "message": "firstname is mandatory field.",
+        "status": "400",
+        "traceId": "df885c42-ba2b-4337-b4ba-a450c905234d"
+      }
     }
   }
 }

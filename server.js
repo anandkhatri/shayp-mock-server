@@ -14,7 +14,8 @@ apimock.processor.process({
 });
 
 function logRequests(req, res, next) {
-    console.log('Headers:', req.pathname);
+    console.log('Request URL:', req.url);
+
     // console.log('Headers:', req.headers);
     next();
 }
