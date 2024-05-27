@@ -15,11 +15,11 @@ apimock.processor.process({
 
 function logRequests(req, res, next) {
     console.log('Request URL:', req.url);
-
+    console.log('Request body:', req.body);
     // console.log('Headers:', req.headers);
     next();
 }
-
+app.use(express.json());  // parse request body as JSON
 app.use(logRequests);
 app.use(apimock.middleware);
 app.use('/dev-interface', express.static(devInterface));

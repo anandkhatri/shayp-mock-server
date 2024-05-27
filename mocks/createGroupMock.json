@@ -1,0 +1,29 @@
+{
+  "name": "createGroup",
+  "request": {
+    "url": "/v0/groups/create",
+    "method": "POST"
+  },
+  "responses": {
+    "ok": {
+      "default": true,
+      "data": {
+        "businessIdentifiers": {
+          "businessNumber": "string",
+          "companyNumber": "string",
+          "registeredBodyNumber": "string",
+          "registeredSchemeNumber": "string"
+        },
+        "customerHayIds": [
+          "3fa85f64-5717-4562-b3fc-2c963f66afa6"
+        ],
+        "groupHayId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+        "groupName": "string",
+        "groupType": "PERSONAL"
+      }
+    },
+    "internal_server_error": {
+      "status": 500
+    }
+  }
+}
